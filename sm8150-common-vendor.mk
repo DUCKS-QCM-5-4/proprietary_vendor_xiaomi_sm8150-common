@@ -156,7 +156,6 @@ PRODUCT_PACKAGES += \
     libCB \
     libOpenCL \
     libVkLayer_q3dtools \
-    libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
@@ -602,6 +601,14 @@ PRODUCT_PACKAGES += \
     dpmd \
     wfdservice \
     wfdservice64
+
+PRODUCT_PACKAGES += \
+    vendor_lib_libEGL_adreno_so \
+    vendor_lib_libGLESv2_adreno_so \
+    vendor_lib_libq3dtools_adreno_so \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
