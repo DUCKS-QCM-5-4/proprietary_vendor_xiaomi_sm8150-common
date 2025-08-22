@@ -89,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
@@ -293,6 +294,7 @@ PRODUCT_PACKAGES += \
     libdataitems \
     libdisp-aba \
     libdisplayqos \
+    libdisplayskuutils \
     libdpmqmihal \
     libdpps \
     libdrmfs \
@@ -369,7 +371,6 @@ PRODUCT_PACKAGES += \
     libril-qc-radioconfig \
     librilqmiservices \
     librpmb \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
@@ -582,6 +583,7 @@ PRODUCT_PACKAGES += \
     pm-service \
     port-bridge \
     power_off_alarm \
+    qdcmss \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
