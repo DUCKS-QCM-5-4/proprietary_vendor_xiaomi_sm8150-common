@@ -301,6 +301,9 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdataitems \
     libdisp-aba \
+    libqdcm-mode-parser \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
@@ -373,6 +376,7 @@ PRODUCT_PACKAGES += \
     libqsocket \
     libqtikeymaster4 \
     librcc \
+    librcmask \
     libril-qc-hal-qmi \
     libril-qc-logger \
     libril-qc-ltedirectdisc \
