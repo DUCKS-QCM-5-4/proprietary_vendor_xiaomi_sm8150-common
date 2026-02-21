@@ -2710,6 +2710,25 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqc2vppfilter",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqc2vppfilter.so",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqcodec2_base",
     owner: "xiaomi",
     strip: {
@@ -2785,9 +2804,39 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcodec2_vndk",
                 "libqcodec2_base",
+                "libqcodec2_hooks",
                 "libqcodec2_utils",
                 "libqcodec2_platform",
                 "libqcodec2_basecodec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcodec2_hooks",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqcodec2_hooks.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqcodec2_base",
                 "libc++",
                 "libc",
                 "libm",
@@ -2849,7 +2898,13 @@ cc_prebuilt_library_shared {
                 "libqcodec2_base",
                 "libqcodec2_platform",
                 "libhidlbase",
+                "libgrallocutils",
+                "libgralloctypes",
+                "libgralloc.qti",
+                "libdisplayconfig.qti",
                 "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libnativewindow",
                 "libc++",
                 "libc",
                 "libm",
@@ -13094,15 +13149,12 @@ cc_prebuilt_binary {
                 "libcutils",
                 "liblog",
                 "libcodec2_vndk",
-                "libqcodec2_base",
-                "libqcodec2_utils",
-                "libqcodec2_basecodec",
-                "libqcodec2_platform",
-                "libqcodec2_core",
                 "android.hardware.media.c2@1.0",
                 "libavservices_minijail",
                 "libbinder",
                 "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
                 "libvndksupport",
                 "libcodec2_hidl@1.0",
                 "libc++",
