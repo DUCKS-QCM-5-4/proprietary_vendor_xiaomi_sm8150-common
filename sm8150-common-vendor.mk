@@ -303,6 +303,9 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdataitems \
     libdisp-aba \
+    libqdcm-mode-parser \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
