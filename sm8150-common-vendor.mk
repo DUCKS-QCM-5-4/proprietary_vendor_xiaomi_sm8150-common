@@ -188,12 +188,12 @@ PRODUCT_PACKAGES += \
     libvpphcp \
     libvpphvx \
     libvpplibrary \
-    vendor.qti.qspmhal@1.0 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.qspmhal@1.0 \
     sound_trigger.primary.msmnile \
     libFileMux_proprietary \
     libacdb-fts \
