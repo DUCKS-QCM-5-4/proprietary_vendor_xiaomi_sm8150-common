@@ -302,9 +302,6 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdataitems \
     libdisp-aba \
-    libqdcm-mode-parser \
-    libsnapdragoncolor-manager \
-    libsnapdragoncolor-qdcm \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
@@ -359,6 +356,7 @@ PRODUCT_PACKAGES += \
     libqcmaputils \
     libqcrilFramework \
     libqcrildatactl \
+    libqdcm-mode-parser \
     libqdi \
     libqdma_file_agent \
     libqdp \
@@ -393,6 +391,8 @@ PRODUCT_PACKAGES += \
     libsecureui_svcsock \
     libsettings \
     libslimclient \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
     libspcom \
     libspl \
     libssc_default_listener \
