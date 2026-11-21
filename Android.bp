@@ -8032,6 +8032,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsdmextension.so",
             ],
             shared_libs: [
+                "libdisplayqos_shim",
+                "libsdm_idle_shim",
                 "libdisplaydebug",
                 "libsdmutils",
                 "libdisplayqos",
